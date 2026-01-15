@@ -87,9 +87,9 @@ function App() {
           <div className="h-[250px] w-full">
             <ResponsiveContainer>
               <BarChart data={chartData}>
-                <XAxis dataKey="name" stroke="#94a3b8" fontSize={12} />
-                <YAxis stroke="#94a3b8" fontSize={12} />
-                <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderRadius: '12px' }} />
+                <XAxis dataKey="name" stroke="#94a3b8" fontSize={14} />
+                <YAxis stroke="#94a3b8" fontSize={14} />
+                <Tooltip contentStyle={{ backgroundColor: 'emerald', borderRadius: '12px' }} />
                 <Bar dataKey="total" radius={[10, 10, 0, 0]} barSize={50}>
                   {chartData.map((entry, index) => (
                     <Cell key={index} fill={entry.total === Math.max(...chartData.map(o => o.total)) ? '#10b981' : '#334155'} />
