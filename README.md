@@ -1,16 +1,34 @@
-# React + Vite
+# 🏏 Cricket Legends Analytics Hub 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, mobile-responsive **Data Warehouse (DWH)** application designed to centralize and analyze cricket gear sales across multiple regional branches (Karachi, Lahore, and Islamabad).
 
-Currently, two official plugins are available:
+## 🚀 Overview
+Cricket Legends Analytics Hub serves as a **Single Source of Truth** for sports retail management. Instead of scattered sales records, this system aggregates data into a cloud-based warehouse, providing real-time Business Intelligence (BI) through interactive charts and automated revenue tracking.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
+- **Real-time Data Ingestion:** Fast, validated entry of sales transactions.
+- **Interactive Analytics:** Dynamic Bar Charts (using Recharts) to visualize regional performance.
+- **CRUD Operations:** Full ability to Create, Read, Update, and Delete warehouse records.
+- **Cloud Warehouse:** Powered by **Firebase Firestore** for non-volatile, persistent storage.
+- **Responsive Dark Theme:** Modern UI built with **Tailwind CSS** for seamless use on mobile and desktop.
 
-## React Compiler
+## 🏗️ Data Warehouse Architecture
+The project follows a modern cloud-based ETL (Extract, Transform, Load) flow:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.  **Extract:** User inputs sales data via the React frontend.
+2.  **Transform:** JavaScript logic ensures data types (prices as numbers) and adds timestamps.
+3.  **Load:** Data is pushed to the Firestore NoSQL collection.
+4.  **Reporting:** The app retrieves data in real-time to generate regional sales summaries and revenue totals.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **Frontend:** ReactJS (Vite)
+- **Styling:** Tailwind CSS
+- **Database:** Firebase Firestore (NoSQL)
+- **Visualization:** Recharts (D3-based charts)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/YourUsername/cricket-dwh-analytics.git](https://github.com/YourUsername/cricket-dwh-analytics.git)
+   cd cricket-dwh-analytics
