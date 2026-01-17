@@ -99,7 +99,7 @@ function App() {
                    <input type="number" className="w-2/3 p-3 bg-slate-900 border border-slate-700 rounded-xl outline-none" placeholder="Unit Price" value={formData.price} onChange={(e) => setFormData({...formData, price: e.target.value})} />
                    <input type="number" className="w-1/3 p-3 bg-slate-900 border border-slate-700 rounded-xl outline-none" placeholder="Qty" value={formData.quantity} onChange={(e) => setFormData({...formData, quantity: e.target.value})} />
                 </div>
-                <button className="w-full bg-emerald-500 text-slate-900 py-4 rounded-xl font-black active:scale-95 transition-transform">UPDATE WAREHOUSE</button>
+                <button className="w-full bg-emerald-600 text-slate-900 py-4 rounded-xl font-black active:scale-95 transition-transform">UPDATE WAREHOUSE</button>
               </form>
             </div>
           </div>
